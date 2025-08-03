@@ -253,6 +253,33 @@
             transform: translateY(0);
         }
 
+        /* #about{
+            background-image: url('images/about.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 500px 500px;
+            position: relative;
+        } */
+
+         .about-section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--neutral-gray);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .about-section-subtitle.animate{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         /* About Section */
         .about-grid {
             display: grid;
@@ -1270,7 +1297,7 @@
                             aboutVisual.classList.add('animate');
                         }
 
-                        const sectionSubVisual = entry.target.querySelector('.section-subtitle');
+                        const sectionSubVisual = entry.target.querySelector('.about-section-subtitle');
                         if(sectionSubVisual){
                             sectionSubVisual.classList.add('animate');
                         }
@@ -1288,7 +1315,7 @@
                     }
                 });
             }, {
-                threshold: 0.4, // Trigger when 30% of the section is visible
+                threshold: 0.3, // Trigger when 30% of the section is visible
                 rootMargin: '0px 0px -50px 0px' // Trigger slightly before fully visible
             });
 
@@ -1297,6 +1324,32 @@
             if (aboutSectionForAnimation) {
                 aboutAnimationObserver.observe(aboutSectionForAnimation);
             }
+
+            const subTitleAnimationObserver = new IntersectionObserver((entries) =>{
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        const sectionSubVisual = entry.target.querySelector('.section-subtitle');
+                        if(sectionSubVisual){
+                            sectionSubVisual.classList.add('animate');
+                        }
+
+                        subTitleAnimationObserver.unobserve(entry.target);
+                        
+                    }
+
+                })
+
+            },{threshold: 0.3, rootMargin: '0px 0px -50px 0px' }
+        )
+
+        const sectionWithSubtitle = document.querySelectorAll('section:has(.section-subtitle)');
+
+        sectionWithSubtitle.forEach(section => {
+            subTitleAnimationObserver.observe(section);
+        })
+
+        
+
         });
     </script>
 </body>
