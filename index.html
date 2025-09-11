@@ -588,6 +588,11 @@
 
         .stat-label { color: var(--text-700); font-weight: 600; }
 
+        /* Improve readability of stats shown on dark hero */
+        .hero .stat-item { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.25); }
+        .hero .stat-number { color: var(--primary-300); }
+        .hero .stat-label { color: rgba(255,255,255,0.88); font-weight: 700; display: block; margin-top: 6px; letter-spacing: 0.2px; }
+
         .about-visual {
             display: flex;
             justify-content: center;
@@ -901,9 +906,9 @@
                     <a href="#work" class="btn-secondary">View our work</a>
                 </div>
                 <div class="stats-grid" style="margin-top:2.2rem;">
-                    <div class="stat-item"><span class="stat-number count-up" data-target="60">0</span><span class="stat-label">Projects shipped</span></div>
-                    <div class="stat-item"><span class="stat-number count-up" data-target="20">0</span><span class="stat-label">Active clients</span></div>
-                    <div class="stat-item"><span class="stat-number">2+</span><span class="stat-label">Years in market</span></div>
+                    <div class="stat-item"><span class="stat-number count-up" data-target="10">0</span><span class="stat-label">Projects shipped</span></div>
+                    <div class="stat-item"><span class="stat-number count-up" data-target="6">0</span><span class="stat-label">Active clients</span></div>
+                    <div class="stat-item"><span class="stat-number">1+</span><span class="stat-label">Years in market</span></div>
                 </div>
             </div>
         </div>
