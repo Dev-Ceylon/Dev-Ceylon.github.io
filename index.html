@@ -853,6 +853,42 @@
         .social-links a[aria-label="Instagram"]:hover {
             background: linear-gradient(45deg, #3742D9, #4F48CF, #7433A0, #B02A70, #D12A58, #E91A1A);
         }
+        
+        /* Footer social buttons - keep original generic styling */
+        .footer .social-links a {
+            background: rgba(255,255,255,0.12) !important;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+            color: white !important;
+        }
+        .footer .social-links a:hover {
+            background: rgba(255,255,255,0.2) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+            transform: translateY(-2px);
+        }
+        
+        /* Marquee logos hover effect */
+        .marquee .track span {
+            transition: color 0.3s ease, opacity 0.3s ease;
+            cursor: default;
+        }
+        .marquee .track span:hover {
+            color: var(--primary-300) !important;
+            opacity: 1 !important;
+        }
+        
+        /* Contact section social buttons - darker blue styling */
+        #contact .social-links a {
+            background: rgba(37, 150, 190, 0.1) !important;
+            border: 1px solid #2596be !important;
+            color: #2596be !important;
+            transition: all 0.3s ease;
+        }
+        #contact .social-links a:hover {
+            background: #2596be !important;
+            border-color: #2596be !important;
+            color: white !important;
+            transform: translateY(-2px);
+        }
 
         .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15); opacity: 0.9; }
 
@@ -1158,10 +1194,10 @@
                     <h3>Dev Ceylon</h3>
                     <p>We craft digital products that users love and businesses trust.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/1CwW4faBMt/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="X">X</a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/dev_ceylon?igsh=MTR0aDA3Y3J3OXhnMQ%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
