@@ -815,6 +815,44 @@
             color: white; text-decoration: none; transition: transform 0.2s ease, background 0.2s ease;
         }
         .social-links a:hover { transform: translateY(-2px); background: rgba(255,255,255,0.2); }
+        
+        /* Social Media Brand Colors */
+        .social-links a[aria-label="Facebook"] {
+            background: #1877F2;
+            border-color: #1877F2;
+        }
+        .social-links a[aria-label="Facebook"]:hover {
+            background: #166FE5;
+            border-color: #166FE5;
+        }
+        
+        .social-links a[aria-label="X"] {
+            background: #000000;
+            border-color: #000000;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .social-links a[aria-label="X"]:hover {
+            background: #333333;
+            border-color: #333333;
+        }
+        
+        .social-links a[aria-label="LinkedIn"] {
+            background: #0A66C2;
+            border-color: #0A66C2;
+        }
+        .social-links a[aria-label="LinkedIn"]:hover {
+            background: #084D96;
+            border-color: #084D96;
+        }
+        
+        .social-links a[aria-label="Instagram"] {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            border: none;
+        }
+        .social-links a[aria-label="Instagram"]:hover {
+            background: linear-gradient(45deg, #3742D9, #4F48CF, #7433A0, #B02A70, #D12A58, #E91A1A);
+        }
 
         .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15); opacity: 0.9; }
 
@@ -915,7 +953,14 @@
     <section id="logos" class="section" style="padding:40px 0;">
         <div class="container">
             <div class="marquee" style="overflow:hidden; position:relative;">
-                <div class="track" style="display:flex; gap:4rem; animation: marquee 26s linear infinite; white-space:nowrap;">
+                <div class="track" style="display:flex; gap:4rem; animation: marquee 20s linear infinite; white-space:nowrap;">
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Fintech</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Healthcare</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">E‑commerce</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Education</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">SaaS</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Enterprise</span>
+                    <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Startups</span>
                     <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Fintech</span>
                     <span style="opacity:0.7; font-weight:700; color:var(--text-700);">Healthcare</span>
                     <span style="opacity:0.7; font-weight:700; color:var(--text-700);">E‑commerce</span>
@@ -960,7 +1005,7 @@
                     <p>CI/CD, observability, and secure infra to ship frequently and safely.</p>
                 </div>
                 <div class="service-card feature-card">
-                    <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Security & QA</h3>
                     <p>Automated testing, audits, and hardening to keep your users protected.</p>
                 </div>
@@ -1070,14 +1115,14 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Reach us</h3>
-                    <div class="contact-item"><i class="fas fa-location-dot"></i><div>123 Galle Road, Colombo 03, Sri Lanka</div></div>
-                    <div class="contact-item"><i class="fas fa-phone"></i><div>+94 11 340 1721</div></div>
+                    <div class="contact-item"><i class="fas fa-location-dot"></i><div>163, New Kandy Rd, Malabe, Sri Lanka</div></div>
+                    <div class="contact-item"><i class="fas fa-phone"></i><div>+94 76 332 9043</div></div>
                     <div class="contact-item"><i class="fas fa-envelope"></i><div>info.devceylon@gmail.com</div></div>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/1CwW4faBMt/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X">X</a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/dev_ceylon?igsh=MTR0aDA3Y3J3OXhnMQ%3D%3D&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -1114,7 +1159,7 @@
                     <p>We craft digital products that users love and businesses trust.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="X">X</a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -1139,7 +1184,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-location-dot"></i> Colombo 03, Sri Lanka</p>
+                    <p><i class="fas fa-location-dot"></i> 163, New Kandy Rd, Malabe, Sri Lanka</p>
                     <p><i class="fas fa-envelope"></i> info.devceylon@gmail.com</p>
                 </div>
             </div>
@@ -1170,7 +1215,13 @@
                     const target = document.querySelector(href);
                     if (target) {
                         e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        const navbar = document.querySelector('.navbar');
+                        const navbarHeight = navbar ? navbar.offsetHeight : 50;
+                        const targetPosition = target.offsetTop - navbarHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
                     }
                 });
             });
